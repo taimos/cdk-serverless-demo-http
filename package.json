@@ -62,7 +62,7 @@
     "@aws-cdk/aws-s3": "1.98.0",
     "@aws-cdk/core": "1.98.0",
     "@taimos/lambda-toolbox": "^0.0.72",
-    "cdk-serverless": "^0.0.54",
+    "cdk-serverless": "^0.0.55",
     "uuid": "^8.3.2"
   },
   "bundledDependencies": [],

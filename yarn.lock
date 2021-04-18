@@ -2020,10 +2020,10 @@ cdk-assets@1.98.0:
     glob "^7.1.6"
     yargs "^16.2.0"
 
-cdk-serverless@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/cdk-serverless/-/cdk-serverless-0.0.54.tgz#435396fcb36fba5e95dc72c9d82ca0bb91eb2873"
-  integrity sha512-LUb5w6sANeJ2nJGccTQ3/j/Y+lt59ZqeiAUsweeogrq5oweL3TeT2YA5DQTqPMrcFNtAcadm0hwbt8kLepECvQ==
+cdk-serverless@^0.0.55:
+  version "0.0.55"
+  resolved "https://registry.yarnpkg.com/cdk-serverless/-/cdk-serverless-0.0.55.tgz#e2e07cbab5914808c9a7f3d16577bcdd82489bab"
+  integrity sha512-2nwA3vNYypwhfMY+4nQmipFFayp/ouSOxfxZFhI3Wy/JpLafU8/NlH8nNEmmkNn2/f/e98DcxJS6PqTaakyqkQ==
   dependencies:
     "@taimos/lambda-toolbox" "^0.0.83"
     aws-sdk "^2.874.0"
