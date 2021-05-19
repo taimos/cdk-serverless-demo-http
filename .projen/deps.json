@@ -9,6 +9,10 @@
       "type": "build"
     },
     {
+      "name": "@types/lambda-log",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
       "version": "^10.17.0",
       "type": "build"
@@ -27,7 +31,7 @@
     },
     {
       "name": "aws-cdk",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "build"
     },
     {
@@ -83,97 +87,96 @@
     },
     {
       "name": "@aws-cdk/assert",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-apigatewayv2-integrations",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-apigatewayv2",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-appsync",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-certificatemanager",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-cloudfront",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-cloudwatch",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-cognito",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-dynamodb",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-iam",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-kms",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-lambda-nodejs",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-lambda",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-route53-targets",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-route53",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-s3",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "1.98.0",
+      "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@taimos/lambda-toolbox",
-      "version": "^0.0.72",
       "type": "runtime"
     },
     {

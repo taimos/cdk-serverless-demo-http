@@ -2,7 +2,7 @@ const { HttpApiAspect } = require('cdk-serverless/lib/projen');
 const { AwsCdkTypeScriptApp } = require('projen');
 
 const project = new AwsCdkTypeScriptApp({
-  cdkVersion: '1.98.0',
+  cdkVersion: '1.100.0',
   cdkVersionPinning: true,
   defaultReleaseBranch: 'main',
   jsiiFqn: 'projen.AwsCdkTypeScriptApp',
@@ -10,6 +10,11 @@ const project = new AwsCdkTypeScriptApp({
   deps: [
     'cdk-serverless',
   ],
+  tsconfig: {
+    compilerOptions: {
+      allowSyntheticDefaultImports: true,
+    },
+  },
 });
 
 new HttpApiAspect(project, {
