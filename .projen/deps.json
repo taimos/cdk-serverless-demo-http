@@ -64,13 +64,12 @@
       "type": "build"
     },
     {
-      "name": "projen",
-      "version": "^0.17.44",
+      "name": "npm-check-updates",
+      "version": "^11",
       "type": "build"
     },
     {
-      "name": "standard-version",
-      "version": "^9",
+      "name": "projen",
       "type": "build"
     },
     {
@@ -79,6 +78,7 @@
     },
     {
       "name": "ts-node",
+      "version": "^9",
       "type": "build"
     },
     {
@@ -111,6 +111,11 @@
       "type": "runtime"
     },
     {
+      "name": "@aws-cdk/aws-cloudfront-origins",
+      "version": "1.100.0",
+      "type": "runtime"
+    },
+    {
       "name": "@aws-cdk/aws-cloudfront",
       "version": "1.100.0",
       "type": "runtime"
@@ -121,12 +126,37 @@
       "type": "runtime"
     },
     {
+      "name": "@aws-cdk/aws-codebuild",
+      "version": "1.100.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-codepipeline-actions",
+      "version": "1.100.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-codepipeline",
+      "version": "1.100.0",
+      "type": "runtime"
+    },
+    {
       "name": "@aws-cdk/aws-cognito",
       "version": "1.100.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-dynamodb",
+      "version": "1.100.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-events-targets",
+      "version": "1.100.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-events",
       "version": "1.100.0",
       "type": "runtime"
     },
@@ -171,7 +201,7 @@
       "type": "runtime"
     },
     {
-      "name": "@aws-cdk/core",
+      "name": "@aws-cdk/pipelines",
       "version": "1.100.0",
       "type": "runtime"
     },

@@ -89,31 +89,6 @@
         }
       ]
     },
-    "bump": {
-      "name": "bump",
-      "category": "20.release",
-      "description": "Commits a bump to the package version based on conventional commits",
-      "steps": [
-        {
-          "exec": "standard-version"
-        }
-      ],
-      "condition": "! git log --oneline -1 | grep -q \"chore(release):\""
-    },
-    "release": {
-      "name": "release",
-      "category": "20.release",
-      "description": "Bumps version & push to main",
-      "steps": [
-        {
-          "spawn": "bump"
-        },
-        {
-          "exec": "git push --follow-tags origin main"
-        }
-      ],
-      "condition": "! git log --oneline -1 | grep -q \"chore(release):\""
-    },
     "test:watch": {
       "name": "test:watch",
       "category": "10.test",
@@ -134,16 +109,53 @@
         }
       ]
     },
-    "projen:upgrade": {
-      "name": "projen:upgrade",
-      "category": "30.maintain",
-      "description": "upgrades projen to the latest version",
+    "upgrade-dependencies": {
+      "name": "upgrade-dependencies",
+      "description": "upgrade dependencies",
+      "env": {
+        "CI": "0"
+      },
       "steps": [
         {
-          "exec": "yarn upgrade -L projen"
+          "exec": "npm-check-updates --upgrade --target=minor --reject='projen'"
         },
         {
-          "exec": "CI=\"\" yarn projen"
+          "exec": "yarn install --check-files"
+        },
+        {
+          "exec": "yarn upgrade @types/aws-lambda @types/jest @types/lambda-log @types/node @types/uuid @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk eslint eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import jest jest-junit json-schema npm-check-updates ts-jest ts-node typescript @aws-cdk/assert @aws-cdk/aws-apigatewayv2-integrations @aws-cdk/aws-apigatewayv2 @aws-cdk/aws-appsync @aws-cdk/aws-certificatemanager @aws-cdk/aws-cloudfront-origins @aws-cdk/aws-cloudfront @aws-cdk/aws-cloudwatch @aws-cdk/aws-codebuild @aws-cdk/aws-codepipeline-actions @aws-cdk/aws-codepipeline @aws-cdk/aws-cognito @aws-cdk/aws-dynamodb @aws-cdk/aws-events-targets @aws-cdk/aws-events @aws-cdk/aws-iam @aws-cdk/aws-kms @aws-cdk/aws-lambda-nodejs @aws-cdk/aws-lambda @aws-cdk/aws-route53-targets @aws-cdk/aws-route53 @aws-cdk/aws-s3 @aws-cdk/core @aws-cdk/pipelines @taimos/lambda-toolbox cdk-serverless uuid"
+        },
+        {
+          "exec": "npx projen"
+        }
+      ]
+    },
+    "upgrade-projen": {
+      "name": "upgrade-projen",
+      "description": "upgrade projen",
+      "env": {
+        "CI": "0"
+      },
+      "steps": [
+        {
+          "exec": "npm-check-updates --upgrade --target=minor --filter='projen'"
+        },
+        {
+          "exec": "yarn install --check-files"
+        },
+        {
+          "exec": "yarn upgrade projen"
+        },
+        {
+          "exec": "npx projen"
+        }
+      ]
+    },
+    "default": {
+      "name": "default",
+      "steps": [
+        {
+          "exec": "node .projenrc.js"
         }
       ]
     },
