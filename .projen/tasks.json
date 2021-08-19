@@ -224,7 +224,6 @@
     },
     "live:dev": {
       "name": "live:dev",
-      "category": "20.release",
       "description": "Run cdk-watch for the given selection",
       "steps": [
         {
@@ -234,7 +233,6 @@
     },
     "live:dev:nologs": {
       "name": "live:dev:nologs",
-      "category": "20.release",
       "description": "Run cdk-watch for the given selection without logs",
       "steps": [
         {
@@ -244,7 +242,6 @@
     },
     "generate:api": {
       "name": "generate:api",
-      "category": "00.build",
       "description": "Generate Types from the OpenAPI specification",
       "steps": [
         {
