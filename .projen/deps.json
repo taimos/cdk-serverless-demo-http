@@ -14,7 +14,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^10.17.0",
+      "version": "^12",
       "type": "build"
     },
     {
@@ -23,19 +23,21 @@
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
+      "version": "^5",
       "type": "build"
     },
     {
       "name": "@typescript-eslint/parser",
+      "version": "^5",
       "type": "build"
     },
     {
       "name": "aws-cdk",
-      "version": "1.100.0",
+      "version": "^2.2.0",
       "type": "build"
     },
     {
-      "name": "eslint",
+      "name": "esbuild",
       "type": "build"
     },
     {
@@ -51,12 +53,17 @@
       "type": "build"
     },
     {
+      "name": "eslint",
+      "version": "^8",
+      "type": "build"
+    },
+    {
       "name": "jest",
       "type": "build"
     },
     {
       "name": "jest-junit",
-      "version": "^12",
+      "version": "^13",
       "type": "build"
     },
     {
@@ -65,7 +72,7 @@
     },
     {
       "name": "npm-check-updates",
-      "version": "^11",
+      "version": "^12",
       "type": "build"
     },
     {
@@ -86,123 +93,15 @@
       "type": "build"
     },
     {
-      "name": "@aws-cdk/assert",
-      "version": "1.100.0",
+      "name": "@aws-cdk/aws-apigatewayv2-alpha",
       "type": "runtime"
     },
     {
-      "name": "@aws-cdk/aws-apigatewayv2-integrations",
-      "version": "1.100.0",
+      "name": "@aws-cdk/aws-apigatewayv2-integrations-alpha",
       "type": "runtime"
     },
     {
-      "name": "@aws-cdk/aws-apigatewayv2",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-appsync",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-certificatemanager",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-cloudfront-origins",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-cloudfront",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-cloudwatch",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-codebuild",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-codepipeline-actions",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-codepipeline",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-cognito",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-dynamodb",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-events-targets",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-events",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-iam",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-kms",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-lambda-nodejs",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-lambda",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-route53-targets",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-route53",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-s3",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/core",
-      "version": "1.100.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/pipelines",
-      "version": "1.100.0",
+      "name": "@aws-cdk/aws-appsync-alpha",
       "type": "runtime"
     },
     {
@@ -210,7 +109,17 @@
       "type": "runtime"
     },
     {
+      "name": "aws-cdk-lib",
+      "version": "^2.2.0",
+      "type": "runtime"
+    },
+    {
       "name": "cdk-serverless",
+      "type": "runtime"
+    },
+    {
+      "name": "constructs",
+      "version": "^10.0.5",
       "type": "runtime"
     },
     {

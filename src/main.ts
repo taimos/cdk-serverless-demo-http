@@ -1,5 +1,6 @@
-import { App, Construct, Stack, StackProps } from '@aws-cdk/core';
+import { App, Stack, StackProps } from 'aws-cdk-lib';
 import { HttpApi } from 'cdk-serverless/lib/constructs';
+import { Construct } from 'constructs';
 import { paths, operations } from './lambda/types.generated';
 
 export class MyHttpStack extends Stack {
@@ -18,6 +19,15 @@ export class MyHttpStack extends Stack {
       },
       autoGenerateRoutes: true,
       monitoring: true,
+      authentication: {
+        groups: {
+          admin: 'Admins',
+          moderators: 'Mods',
+        },
+        triggers: {
+          customMessages: true,
+        },
+      },
     });
 
     api.getFunctionForOperation('addTodo').grantSendEmails();
